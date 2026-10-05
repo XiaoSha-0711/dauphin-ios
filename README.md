@@ -4,6 +4,8 @@
 
 [![pages-build-deployment](https://github.com/tkuitocc/dauphin-ios/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/tkuitocc/dauphin-ios/actions/workflows/pages/pages-build-deployment)
 
+[![Download on the App Store](https://github.com/user-attachments/assets/dd0f6bcb-6009-423e-a80b-b562ae3ee3b3)](https://apps.apple.com/tw/app/id6759800861)
+
 [<img width="132" height="45" alt="Available on Apple TestFlight" src="docs/Available_on_TestFlight_badge.png" />](https://testflight.apple.com/join/D3K3B9pX)
 
 ## Overview
