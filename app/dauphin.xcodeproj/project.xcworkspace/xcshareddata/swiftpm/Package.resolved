@@ -1,5 +1,5 @@
 {
-  "originHash" : "8363f8717e764f3f9cf614469af3af50f6d8a79f388a70a33a8bfa6086fc8619",
+  "originHash" : "513a9eca734d8f3dd53f1c9850f6dd4db437358427138c7fa6f5f2ba5886786e",
   "pins" : [
     {
       "identity" : "keychain-swift",
@@ -22,7 +22,7 @@
     {
       "identity" : "swiftui-code39",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jiahan-wu/swiftui-code39.git",
+      "location" : "https://github.com/tkuitocc/swiftui-code39.git",
       "state" : {
         "revision" : "b91feac56059944e5e857c8576bc7708b2cf5b0f",
         "version" : "1.1.0"

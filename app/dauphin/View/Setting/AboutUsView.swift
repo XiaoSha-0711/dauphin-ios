@@ -12,7 +12,7 @@ struct AboutUsView: View {
     let packages = [
         ("KeychainSwift", "https://github.com/evgenyneu/keychain-swift"),
         ("Lottie", "https://github.com/airbnb/lottie-ios"),
-        ("swiftui-code39", "https://github.com/jiahan-wu/swiftui-code39"),
+        ("swiftui-code39", "https://github.com/tkuitocc/swiftui-code39"),
     ]
 
     let usefulLinks = [
