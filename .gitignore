@@ -54,7 +54,6 @@ Dependencies/
 # Swift Package Manager
 Packages/
 Package.pins
-Package.resolved
 .swiftpm/
 .netrc
 
