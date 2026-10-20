@@ -146,7 +146,11 @@ private struct CameraZoomView: View {
                         }.onEnded { value in scale = min(5, max(1, scale * value.magnification)) })
                 }
                 CameraTimeView(snapshot: snapshot).padding(.horizontal)
-                Button("Reset Zoom") { scale = 1 }.padding(.bottom)
+                Button {
+                    scale = 1
+                } label: {
+                    Text("Reset Zoom").frame(minWidth: 44, minHeight: 44)
+                }.padding(.bottom)
             }.navigationTitle(camera.name).navigationBarTitleDisplayMode(.inline).toolbar {
                 ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } }
             }

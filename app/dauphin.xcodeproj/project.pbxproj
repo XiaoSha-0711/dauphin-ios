@@ -272,6 +272,11 @@
 			path = StdID;
 			sourceTree = "<group>";
 		};
+		CA0000000000000000000001 /* FeaturesTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FeaturesTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -368,6 +373,7 @@
 				185C495A2CF6DD8400589C39 /* CoursesWidget */,
 				18E8F2162DB5CC3E00B2FB57 /* StdID */,
 				188CEB692E8367DE00CDD450 /* Tests */,
+				CA0000000000000000000001 /* FeaturesTests */,
 				185C49552CF6DD8400589C39 /* Frameworks */,
 				18B3681A2CE5FA110027FEBE /* Products */,
 			);
@@ -523,6 +529,9 @@
 			);
 			dependencies = (
 				188CEB982E838D7000CDD450 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CA0000000000000000000001 /* FeaturesTests */,
 			);
 			name = FeaturesTests;
 			packageProductDependencies = (
