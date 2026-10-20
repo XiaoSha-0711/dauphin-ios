@@ -33,6 +33,9 @@
             reference = "container:Tests/Models.xctestplan"
             default = "YES">
          </TestPlanReference>
+         <TestPlanReference
+            reference = "container:Tests/Cameras.xctestplan">
+         </TestPlanReference>
       </TestPlans>
       <Testables>
          <TestableReference

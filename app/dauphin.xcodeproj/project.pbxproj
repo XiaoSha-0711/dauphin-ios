@@ -524,6 +524,9 @@
 			dependencies = (
 				188CEB982E838D7000CDD450 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				188CEB692E8367DE00CDD450 /* Tests */,
+			);
 			name = FeaturesTests;
 			packageProductDependencies = (
 			);

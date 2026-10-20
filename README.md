@@ -53,6 +53,21 @@ xcrun simctl install booted build/Debug-iphonesimulator/dauphin.app
 - `Tests/`: Unit and snapshot tests.
 - Root configs: `api.plist`, `StdID` (sample values only).
 
+## Campus cameras
+
+Open **Other → Campus Cameras** to view the ten [official Tamkang University webcams](https://webcam.ipcnet.tku.edu.tw/). Images refresh every 30 seconds while the page is active, with manual refresh and full-screen pinch zoom. Image timestamps are recognized on-device and shown in Taipei time; the server's file timestamp is labelled separately when recognition fails. A failed refresh preserves the previous image and its timestamp.
+
+Camera strings are available in English and Traditional Chinese. Camera access does not require a university login.
+
+Run camera UI tests separately from the default model tests:
+
+```sh
+xcodebuild -project app/dauphin.xcodeproj -scheme dauphin -testPlan Cameras \
+  -destination 'platform=iOS Simulator,name=iPhone 18 Pro' -parallel-testing-enabled NO test
+```
+
+The camera UI tests use deterministic images only in Debug simulator builds. For camera-only local testing, copy `app/dauphin/api.example.plist` to the ignored `app/dauphin/api.plist`; actual course login still requires valid upstream API keys.
+
 ## Contributing
 
 - Keep SwiftLint warnings at zero.
