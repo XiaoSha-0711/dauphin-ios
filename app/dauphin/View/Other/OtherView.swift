@@ -10,6 +10,7 @@ import SwiftUI
 enum OtherSection: String, CaseIterable {
     case calendar
     case library
+    case cameras
 }
 
 struct OtherView: View {
@@ -25,12 +26,16 @@ struct OtherView: View {
                     Label("Calendar", systemImage: "calendar").tag(OtherSection.calendar)
 
                     Label("Library", systemImage: "books.vertical.fill").tag(OtherSection.library)
+
+                    Label("Campus Cameras", systemImage: "web.camera").tag(OtherSection.cameras)
+                        .accessibilityIdentifier("campus-camera-entry")
                 }.navigationTitle("Other").listStyle(SidebarListStyle())
             } detail: {
                 Group {
                     switch selectedSection {
                     case .calendar: EventView()
                     case .library: LibraryView(authViewModel: authViewModel)
+                    case .cameras: CampusCameraView()
                     case .none:
                         VStack(spacing: 20) {
                             Image(systemName: "square.grid.2x2").font(.system(size: 60))
@@ -52,12 +57,13 @@ struct OtherView: View {
                     NavigationLink(destination: LibraryView(authViewModel: authViewModel)) {
                         Label("Library", systemImage: "books.vertical.fill")
                     }
+                    NavigationLink(destination: CampusCameraView()) {
+                        Label("Campus Cameras", systemImage: "web.camera")
+                    }.accessibilityIdentifier("campus-camera-entry")
                 }.navigationTitle("Other")
             }
         }
     }
 }
 
-#Preview {
-    OtherView(authViewModel: AuthViewModel())
-}
+#Preview { OtherView(authViewModel: AuthViewModel()) }
